@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Innovatech Solutions</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Menú de Navegación -->
+    <header>
+        <h1>Innovatech Solutions</h1>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#quienes-somos">¿Quiénes somos?</a></li>
+                <li><a href="#productos-servicios">Productos y Servicios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#trabaja-con-nosotros">Trabaja con Nosotros</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección Inicio -->
+    <main>
+        <section id="inicio">
+            <h2>Bienvenido a Innovatech Solutions</h2>
+            <p>En Innovatech Solutions nos dedicamos a ofrecer soluciones tecnológicas innovadoras para el crecimiento de tu empresa. Nuestro equipo de expertos está comprometido en desarrollar herramientas que faciliten la gestión y optimicen los procesos empresariales.</p>
+            <img src="imagenes/landing.png" alt="Imagen destacada">
+        </section>
+
+        <!-- Sección Quiénes somos -->
+        <section id="quienes-somos">
+            <h2>¿Quiénes somos?</h2>
+            <p>Somos una empresa líder en el sector tecnológico con más de 10 años de experiencia. Nuestro equipo está formado por profesionales apasionados por la innovación y la tecnología. Creemos en el poder del software para transformar negocios y potenciar ideas.</p>
+            <div class="galeria">
+                <img src="imagenes/equipo/equipo1.jpg" alt="Equipo 1">
+                <img src="imagenes/equipo/equipo2.jpg" alt="Equipo 2">
+                <img src="imagenes/equipo/equipo3.jpg" alt="Equipo 3">
+            </div>
+            <div class="video-container">
+                <video controls>
+                    <source src="videos/video_corporativo.mp4" type="video/mp4">
+                </video>
+            </div>
+        </section>
+
+        <!-- Sección Productos y Servicios -->
+        <section id="productos-servicios">
+            <h2>Productos y Servicios</h2>
+            <table>
+                <tr>
+                    <th>Producto</th>
+                    <th>Descripción</th>
+                    <th>Precio</th>
+                </tr>
+                <tr>
+                    <td>Software CRM</td>
+                    <td>Gestión avanzada de relaciones con clientes.</td>
+                    <td>$1200</td>
+                </tr>
+                <tr>
+                    <td>Aplicación Móvil</td>
+                    <td>Solución personalizada para dispositivos móviles.</td>
+                    <td>$3000</td>
+                </tr>
+                <tr>
+                    <td>Sistema ERP</td>
+                    <td>Solución integral para la gestión de recursos empresariales: finanzas, logística y producción.</td>
+                    <td>$5000</td>
+                </tr>
+                <tr>
+                    <td>Plataforma E-commerce</td>
+                    <td>Creación de tiendas online con integración de pasarelas de pago y gestión de inventario.</td>
+                    <td>$4500</td>
+                </tr>
+                <tr>
+                    <td>Chatbot IA</td>
+                    <td>Implementación de asistentes virtuales inteligentes para atención al cliente 24/7.</td>
+                    <td>$2000</td>
+                </tr>
+                <tr>
+                    <td>Dashboard Analítico</td>
+                    <td>Panel de control interactivo para visualizar métricas clave y tomar decisiones basadas en datos.</td>
+                    <td>$3500</td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- Sección Contacto -->
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <p>Puedes contactarnos a través del siguiente formulario.</p>
+            <form>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required>
+                
+                <label for="comentarios">Comentarios:</label>
+                <textarea id="comentarios" name="comentarios" rows="4"></textarea>
+                
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+        <!-- Sección Trabaja con Nosotros -->
+        <section id="trabaja-con-nosotros">
+            <h2>Trabaja con Nosotros</h2>
+            <form>
+                <!-- Datos personales -->
+                <fieldset>
+                    <legend>Datos Personales</legend>
+                    <label for="nombre-personal">Nombre:</label>
+                    <input type="text" id="nombre-personal" name="nombre-personal" required>
+                    
+                    <label for="apellidos">Apellidos:</label>
+                    <input type="text" id="apellidos" name="apellidos" required>
+                    
+                    <label for="dni">DNI:</label>
+                    <input type="text" id="dni" name="dni" required>
+                    
+                    <label for="sexo">Sexo:</label>
+                    <select id="sexo" name="sexo" required>
+                        <option value="" disabled selected>Selecciona tu sexo</option>
+                        <option value="hombre">Hombre</option>
+                        <option value="mujer">Mujer</option>
+                    </select>
+                    
+                    <label for="nacimiento">Fecha de Nacimiento:</label>
+                    <input type="date" id="nacimiento" name="nacimiento" required>
+                </fieldset>
+
+                <!-- Formación -->
+                <fieldset>
+                    <legend>Formación</legend>
+                    <label for="titulo">Título:</label>
+                    <input type="text" id="titulo" name="titulo">
+                    
+                    <label for="anio-inicio">Año de Inicio:</label>
+                    <input type="number" id="anio-inicio" name="inicio">
+                    
+                    <label for="fin">Año de Fin:</label>
+                    <input type="number" id="fin" name="fin">
+                </fieldset>
+
+                <!-- Idiomas -->
+                <fieldset>
+                    <legend>Idiomas</legend>
+                    
+                    <label for="idioma">Idioma:</label>
+                    <input type="text" id="idioma" name="idioma" placeholder="Ejemplo: Inglés, Español" required>
+                    
+                    <label for="hablado">Hablado:</label>
+                    <select id="hablado" name="hablado" required>
+                        <option value="" disabled selected>Selecciona tu nivel</option>
+                        <option value="excelente">Excelente</option>
+                        <option value="bien">Bien</option>
+                        <option value="regular">Regular</option>
+                        <option value="nada">Nada</option>
+                    </select>
+                    
+                    <label for="leido">Leído:</label>
+                    <select id="leido" name="leido" required>
+                        <option value="" disabled selected>Selecciona tu nivel</option>
+                        <option value="excelente">Excelente</option>
+                        <option value="bien">Bien</option>
+                        <option value="regular">Regular</option>
+                        <option value="nada">Nada</option>
+                    </select>
+                    
+                    <label for="escrito">Escrito:</label>
+                    <select id="escrito" name="escrito" required>
+                        <option value="" disabled selected>Selecciona tu nivel</option>
+                        <option value="excelente">Excelente</option>
+                        <option value="bien">Bien</option>
+                        <option value="regular">Regular</option>
+                        <option value="nada">Nada</option>
+                    </select>
+                </fieldset>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Pie de Página -->
+    <footer>
+        <p>También puedes visitarnos en:</p>
+        <a href="#"><img src="assets/facebook.png" alt="Facebook"></a>
+        <a href="#"><img src="assets/X.jpg" alt="X"></a>
+    </footer>
+</body>
+</html>
